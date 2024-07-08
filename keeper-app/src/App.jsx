@@ -3,6 +3,7 @@ import "./App.css";
 import CreateArea from "./CreateArea.jsx";
 import Note from "./Note.jsx";
 
+
 function App() {
 
   const[notes, setNotes] = useState([]);
@@ -17,7 +18,7 @@ function App() {
     setNotes(prevNotes => {
      return prevNotes.filter((noteItem, index)=>{
         return index !== id;
-      })
+      }) 
     })
   }
 
